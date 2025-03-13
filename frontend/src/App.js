@@ -12,7 +12,7 @@ import LoadingScreen from './components/LoadingScreen';
 function App() {
   return (
     <Router>
-      <div className="min-h-screen bg-gradient-to-b from-gray-900 to-black text-white">
+      <div className="min-h-screen bg-gray-900">
         <Navbar />
         <Suspense fallback={<LoadingScreen />}>
           <Routes>
