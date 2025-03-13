@@ -7,7 +7,7 @@ const Avatar = () => {
     <div className="relative">
       <div className="w-64 h-64 mx-auto overflow-hidden rounded-full border-4 border-blue-500">
         <img
-          src="/assets/profile.jpg"
+          src="./assets/profile.jpg"
           alt="M S Kamran"
           className="w-full h-full object-cover"
           onError={(e) => {
@@ -18,7 +18,7 @@ const Avatar = () => {
       </div>
       <div className="absolute -bottom-4 left-1/2 transform -translate-x-1/2">
         <a
-          href="/assets/cv.pdf"
+          href="./assets/cv.pdf"
           download
           className="px-6 py-2 bg-blue-600 text-white rounded-full hover:bg-blue-700 transition-colors"
         >
@@ -145,7 +145,7 @@ const About = () => {
                         </p>
                       </div>
                       <a
-                        href="/assets/Data science and machine learning with python, BITM, Course Completion Certificate.pdf"
+                        href="./assets/Data science and machine learning with python, BITM, Course Completion Certificate.pdf"
                         className="px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors flex-shrink-0 ml-4"
                         target="_blank"
                         rel="noopener noreferrer"

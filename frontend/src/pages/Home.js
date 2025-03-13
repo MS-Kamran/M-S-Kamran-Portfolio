@@ -4,7 +4,7 @@ import Layout from '../components/Layout';
 
 const ProjectCard = ({ title, description, image, technologies, link, id }) => (
   <motion.a
-    href={`/#/projects#${id}`}
+    href={`#/projects#${id}`}
     whileHover={{ scale: 1.05 }}
     className="block bg-[#0a1528] rounded-xl overflow-hidden shadow-xl cursor-pointer"
   >
@@ -111,13 +111,13 @@ const Home = () => {
               className="flex space-x-4 justify-center"
             >
               <a
-                href="/#/projects"
+                href="#/projects"
                 className="px-8 py-3 bg-blue-600 hover:bg-blue-700 rounded-full text-white font-semibold transition-colors"
               >
                 View Projects
               </a>
               <a
-                href="/#/about"
+                href="#/about"
                 className="px-8 py-3 border-2 border-blue-400 hover:border-blue-500 rounded-full text-blue-400 hover:text-blue-300 font-semibold transition-colors"
               >
                 About Me

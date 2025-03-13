@@ -47,28 +47,28 @@ const Projects = () => {
     {
       title: "Data Analysis & Visualization",
       description: "Comprehensive OCR data preprocessing and analysis project with visualization of insights and data patterns.",
-      image: "/assets/projects/Data analysis and Data visualization.png",
+      image: "./assets/projects/Data analysis and Data visualization.png",
       technologies: ["Python", "Pandas", "Matplotlib", "Seaborn", "OCR"],
       link: "https://github.com/MS-Kamran/OCR-Data-PreProcessinng"
     },
     {
       title: "OCR Data Preprocessing",
       description: "Advanced image processing system for OCR data preprocessing, including enhancement and analysis techniques.",
-      image: "/assets/projects/Image processing.png",
+      image: "./assets/projects/Image processing.png",
       technologies: ["Python", "OpenCV", "NumPy", "OCR", "Image Processing"],
       link: "https://github.com/MS-Kamran/OCR-Data-PreProcessinng"
     },
     {
       title: "Meteorological Aerodrome Reports",
       description: "Analysis and processing of meteorological aerodrome reports for weather data insights.",
-      image: "/assets/projects/meteorological-aerodrome-reports.jpg",
+      image: "./assets/projects/meteorological-aerodrome-reports.jpg",
       technologies: ["Python", "Data Analysis", "Weather Data", "Reporting"],
       link: "https://github.com/MS-Kamran/Meteorological-Aerodrome-Reports"
     },
     {
       title: "Gender & Age Prediction from Bangla Handwriting",
       description: "Machine learning model for predicting gender and age from Bangla handwriting images with detailed accuracy metrics.",
-      image: "/assets/projects/Model Accuracy.png",
+      image: "./assets/projects/Model Accuracy.png",
       technologies: ["Python", "TensorFlow", "Deep Learning", "Computer Vision", "OCR"],
       link: "https://github.com/MS-Kamran/Gender-and-Age-Prediction-from-Bangla-Handwriting-Image"
     }
