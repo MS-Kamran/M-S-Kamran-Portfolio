@@ -1,11 +1,12 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import { motion, useScroll, useTransform } from 'framer-motion';
 import Layout from '../components/Layout';
 
-const ProjectCard = ({ title, description, image, technologies, link }) => (
-  <motion.div
+const ProjectCard = ({ title, description, image, technologies, link, id }) => (
+  <motion.a
+    href={`/projects#${id}`}
     whileHover={{ scale: 1.05 }}
-    className="bg-[#0a1528] rounded-xl overflow-hidden shadow-xl"
+    className="block bg-[#0a1528] rounded-xl overflow-hidden shadow-xl cursor-pointer"
   >
     <div className="relative h-48 overflow-hidden">
       <motion.img
@@ -20,7 +21,7 @@ const ProjectCard = ({ title, description, image, technologies, link }) => (
     <div className="p-6">
       <h3 className="text-xl font-semibold text-blue-400 mb-2">{title}</h3>
       <p className="text-gray-300 mb-4">{description}</p>
-      <div className="flex flex-wrap gap-2 mb-4">
+      <div className="flex flex-wrap gap-2">
         {technologies.map((tech) => (
           <span
             key={tech}
@@ -30,16 +31,8 @@ const ProjectCard = ({ title, description, image, technologies, link }) => (
           </span>
         ))}
       </div>
-      <a
-        href={link}
-        target="_blank"
-        rel="noopener noreferrer"
-        className="inline-block px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors"
-      >
-        View Project
-      </a>
     </div>
-  </motion.div>
+  </motion.a>
 );
 
 const Home = () => {
@@ -57,6 +50,7 @@ const Home = () => {
 
   const featuredProjects = [
     {
+      id: "gender-age-prediction",
       title: "Gender & Age Prediction from Bangla Handwriting",
       description: "Machine learning model for predicting gender and age from Bangla handwriting images with detailed accuracy metrics.",
       image: "/assets/projects/Model Accuracy.png",
@@ -64,6 +58,7 @@ const Home = () => {
       link: "https://github.com/MS-Kamran/Gender-and-Age-Prediction-from-Bangla-Handwriting-Image"
     },
     {
+      id: "data-analysis-visualization",
       title: "Data Analysis & Visualization",
       description: "Comprehensive OCR data preprocessing and analysis project with visualization of insights and data patterns.",
       image: "/assets/projects/Data analysis and Data visualization.png",
@@ -71,6 +66,7 @@ const Home = () => {
       link: "https://github.com/MS-Kamran/OCR-Data-PreProcessinng"
     },
     {
+      id: "meteorological-reports",
       title: "Meteorological Aerodrome Reports",
       description: "Analysis and processing of meteorological aerodrome reports for weather data insights.",
       image: "/assets/projects/meteorological-aerodrome-reports.jpg",
