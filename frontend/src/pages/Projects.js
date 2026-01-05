@@ -45,32 +45,25 @@ const ProjectCard = ({ title, description, image, technologies, link }) => (
 const Projects = () => {
   const projects = [
     {
-      title: "Data Analysis & Visualization",
-      description: "Comprehensive OCR data preprocessing and analysis project with visualization of insights and data patterns.",
-      image: "./assets/projects/Data analysis and Data visualization.png",
-      technologies: ["Python", "Pandas", "Matplotlib", "Seaborn", "OCR"],
-      link: "https://github.com/MS-Kamran/OCR-Data-PreProcessinng"
+      title: "Gender & Age Prediction from Bangla Handwriting",
+      description: "Machine learning model for predicting gender and age from Bangla handwriting images. Achieved 78.34% (Gender) and 77.14% (Age) accuracy using custom architectures.",
+      image: "./assets/projects/realistic_model_accuracy_tablet.png",
+      technologies: ["Python", "TensorFlow", "Deep Learning", "Computer Vision", "OCR"],
+      link: "https://github.com/MS-Kamran/Gender-and-Age-Prediction-from-Bangla-Handwriting-Image"
     },
     {
-      title: "OCR Data Preprocessing",
-      description: "Advanced image processing system for OCR data preprocessing, including enhancement and analysis techniques.",
-      image: "./assets/projects/Image processing.png",
-      technologies: ["Python", "OpenCV", "NumPy", "OCR", "Image Processing"],
-      link: "https://github.com/MS-Kamran/OCR-Data-PreProcessinng"
-    },
-    {
-      title: "Meteorological Aerodrome Reports",
-      description: "Analysis and processing of meteorological aerodrome reports for weather data insights.",
-      image: "./assets/projects/meteorological-aerodrome-reports.jpg",
-      technologies: ["Python", "Data Analysis", "Weather Data", "Reporting"],
+      title: "Real-Time Weather Monitoring Tool",
+      description: "Engineered a Python script to ingest live meteorological data from METAR API and visualized dynamic wind vectors and weather conditions.",
+      image: "./assets/projects/weather_monitoring_dashboard.png",
+      technologies: ["Python", "Data Analysis", "Tkinter", "API Integration"],
       link: "https://github.com/MS-Kamran/Meteorological-Aerodrome-Reports"
     },
     {
-      title: "Gender & Age Prediction from Bangla Handwriting",
-      description: "Machine learning model for predicting gender and age from Bangla handwriting images with detailed accuracy metrics.",
-      image: "./assets/projects/Model Accuracy.png",
-      technologies: ["Python", "TensorFlow", "Deep Learning", "Computer Vision", "OCR"],
-      link: "https://github.com/MS-Kamran/Gender-and-Age-Prediction-from-Bangla-Handwriting-Image"
+      title: "Data Analysis & Visualization",
+      description: "Comprehensive OCR data preprocessing and analysis project with visualization of insights and data patterns.",
+      image: "./assets/projects/realistic_data_analysis.png",
+      technologies: ["Python", "Pandas", "Matplotlib", "Seaborn", "OCR"],
+      link: "https://github.com/MS-Kamran/OCR-Data-PreProcessinng"
     }
   ];
 
@@ -82,12 +75,12 @@ const Projects = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
-            className="text-4xl font-bold text-blue-400 mb-12"
+            className="text-4xl font-bold text-blue-400 mb-12 text-center"
           >
             Projects
           </motion.h1>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {projects.map((project, index) => (
               <motion.div
                 key={project.title}
@@ -105,4 +98,4 @@ const Projects = () => {
   );
 };
 
-export default Projects; 
+export default Projects;
